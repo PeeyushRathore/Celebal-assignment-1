@@ -1,0 +1,120 @@
+/* FormPage.css */
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: #5c7cfa; /* nice blue */
+  outline: none;
+  box-shadow: 0 0 8px rgba(92, 124, 250, 0.4);
+}
+
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+div {
+  position: relative; /* for password show/hide button */
+}
+
+div > button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 6px 12px;
+  border: none;
+  background-color: #5c7cfa;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+div > button:hover {
+  background-color: #3a54e8;
+}
+
+p {
+  color: #e74c3c;
+  margin-top: -14px;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #5c7cfa;
+  color: white;
+  font-size: 1.1rem;
+  padding: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #3a54e8;
+}
+
+button[type="submit"]:disabled {
+  background-color: #a2a8d3;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  form {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+}
